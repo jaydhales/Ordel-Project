@@ -18,9 +18,10 @@ header {
     display: flex;
     margin: 1rem;
 }
-#hmb {
+.hmb {
     display: flex;
     align-items: center;
+    margin-top: 1rem;
     position: absolute;
     right: 2rem;
 }
@@ -211,7 +212,7 @@ small {
     #navbar {
         visibility: visible;
     }
-    #hmb {
+    .hmb {
         visibility: hidden;
     }
     #faq {
