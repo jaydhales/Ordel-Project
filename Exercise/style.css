@@ -6,6 +6,7 @@ color: #242D52, #818388, #D03025; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all ease 0.5s;
 }
 
 body {
@@ -78,14 +79,14 @@ a.btn:hover {
 }
 
 section {
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 main {
     padding: 1rem 0;
 }
 
 p {
-    margin: 1rem 0.5rem;
+    margin: 1rem 0;
 }
 
 section .btn {
@@ -182,6 +183,8 @@ footer {
     background: #242D52;
     padding: 2rem;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 footer a {
     color: #fff;
@@ -199,10 +202,10 @@ footer .logo {
 small {
     position: absolute;
     bottom: 20px;
-    right: 70px;
+    right: 2rem;
 }
 
-@media screen and (min-width:630px) { 
+@media screen and (min-width:620px) { 
 
     header {
         flex-direction: row;
@@ -223,6 +226,9 @@ small {
         width: 350px;
     }
 
+    footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     
 }
 

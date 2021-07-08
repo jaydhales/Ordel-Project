@@ -1,5 +1,2 @@
-var signup = document.querySelectorAll(".start");
+var hamburgerBtn = document.querySelector('.hmb');
 
-function signupForm () {
-    
-}
