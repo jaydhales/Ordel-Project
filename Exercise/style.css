@@ -12,7 +12,6 @@ color: #242D52, #818388, #D03025; */
 body {
     color: #818388;
     font-family: Be Vietnam;
-    line-height: 1.5rem;
 }
 
 header {
@@ -64,7 +63,7 @@ h1 {
 .btn {
     background: #f25f3a;
     padding: 0.6rem 1rem;
-    border-radius: 11px;
+    border-radius: 20px;
     font-size: 1.25rem;
     font-weight: bold;
     color: #fff;
@@ -86,7 +85,7 @@ main {
 }
 
 p {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 section .btn {
@@ -161,8 +160,8 @@ form {
     flex-wrap: wrap;
 }
 input {
-    padding: 0.4rem 1rem;
-    border-radius: 11px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
     font-size: 1rem;
     border: none;
     margin: 0.5rem ;
@@ -170,7 +169,6 @@ input {
 #submit {
     font-size: 1.2rem;
     background: #242D52;
-    padding: 0.6rem 1rem;
     box-shadow: 4px 9px 20px rgba(0, 0, 0, 0.36);
     font-weight: bold;
 }
@@ -190,10 +188,6 @@ footer a {
     color: #fff;
     font-size: 1rem;
     line-height: 2rem;
-}
-footer .logo {
-    width: auto;
-    height: auto;
 }
 #contact {
     margin-top: 1rem;
