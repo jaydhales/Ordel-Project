@@ -4,9 +4,9 @@ const navBtn = document.querySelectorAll('.hmb');
 const navBar = document.querySelector('#navbar');
 const copyright = document.querySelector('small');
 
-function eventL(variable, event, func) {
+function eventClick(variable, func) {
   for (let btn = 0; btn < variable.length; btn++) {
-    variable[btn].addEventListener(event, func);
+    variable[btn].addEventListener('click', func);
   }
 }
 
@@ -35,17 +35,14 @@ function changeNav() {
   navBar.classList.toggle('active');
 }
 
-function eventClick(variable, func) {
-  eventL(variable, 'click', func);
-}
-
 eventClick(startBtns, logIn);
 eventClick(caret, cDown);
 eventClick(navBtn, changeNav);
-eventL(window, 'resize', (e) => {
-  if (e.target.innerWidth === 700) {
+
+copyright.innerHTML = `&copy; ${new Date().getFullYear()} All Rights Reserved`;
+
+window.addEventListener('resize', (e) => {
+  if (e.target.innerWidth >= 700) {
     navBar.classList.remove('active');
   }
 });
-
-copyright.innerHTML = `&copy; ${new Date().getFullYear()} All Rights Reserved`;
